@@ -1,0 +1,111 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+
+body {
+    font-family: "Mochiy Pop One", sans-serif;
+}
+
+.sound-spotter {
+    width: 100%;
+    text-align: center;
+    background: transparent;
+}
+
+
+/* --------------------------------
+   SET BUTTONS
+   -------------------------------- */
+
+.set-selector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 30px;
+}
+
+.set-selector button {
+    font-family: "Mochiy Pop One", sans-serif;
+    font-size: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: #C9A7E8;
+    color: white;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 0 #9B6BC3;
+
+    transition: all 0.15s ease;
+}
+
+.set-selector button:hover {
+    background: #B98AD9;
+    transform: translateY(-3px);
+    box-shadow: 0 7px 0 #8B5BB5;
+}
+
+.set-selector button.active {
+    background: #7B3FA0;
+    box-shadow: 0 4px 0 #54256F;
+    transform: translateY(0);
+}
+
+.set-selector button:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 #54256F;
+}
+
+
+/* --------------------------------
+   MINIMAL PAIRS
+   -------------------------------- */
+
+#pairs {
+    font-size: 60px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.first-word {
+    color: #1976D2;
+}
+
+.second-word {
+    color: #E53935;
+}
+
+.dash {
+    color: #222;
+    margin: 0 20px;
+}
+
+
+/* --------------------------------
+   SMALLER SCREENS
+   -------------------------------- */
+
+@media (max-width: 700px) {
+
+    #pairs {
+        font-size: 40px;
+    }
+
+    .dash {
+        margin: 0 10px;
+    }
+
+    .set-selector button {
+        font-size: 16px;
+    }
+}
